@@ -1,0 +1,546 @@
+html {
+  font-size: 16px;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4em;
+  align-items: center;
+}
+
+/*Header Section*/
+.top-bar {
+  height: 64px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Nobile";
+}
+
+.top-bar img {
+  margin-left: 24px;
+  height: 3em;
+}
+
+.top-bar span {
+  font-size: 20px;
+  display: inline-flex;
+}
+
+.top-bar nav {
+  display: inline-flex;
+}
+
+.top-bar nav a:hover {
+  color: #F28E06;
+  transition: color 1.5s linear 0;
+}
+
+.top-bar nav a {
+  padding-right: 16px;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.top-bar nav a:last-child {
+  margin-right: 24px;
+  font-size: 16px;
+}
+
+.mobile {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  color: #BEC5DB;
+}
+
+/*End Header Section*/
+
+/*Jumbotron Section*/
+
+.jumbotron {
+  font-family: "Nobile";
+  display: flex;
+  align-items: center;
+  background-color: #BEC5DB;
+}
+
+.jumbotron h1 {
+  font-weight: medium;
+  margin-right: 2rem;
+}
+
+.jumbotron img {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.tagline {
+  display: block;
+  margin-left: 24px;
+}
+
+.tagline h1 {
+  font-size: 45px;
+}
+
+.tagline h2 {
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+.button {
+  color: white;
+  background-color: #273591;
+  padding: 16px;
+  align-content: center;
+  padding-left: 8.7rem;
+  font-size: 18px;
+  width: 14rem;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #359988;
+  transition: background-color 1.5s linear 0;
+}
+
+@media only screen and (max-width:1175px) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  header {
+    width: auto;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    padding-top: .5rem;
+  }
+
+  .mobile img {
+    height: 2rem;
+  }
+
+  .jumbotron {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .jumbotron img {
+    width: 100%;
+    margin-top: 0rem;
+    margin-bottom: .5rem;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .logo img {
+    padding-top: 2.3rem;
+    display: flex;
+    height: 2rem;
+    }
+
+  .logo span{
+    padding: 2rem 0rem;
+  }
+
+  .tagline {
+    margin: 32px 16px;
+  }
+}
+
+/*End Jumbotron Section*/
+
+/*Main Content Section*/
+
+.section-one {
+  font-family: "Nobile";
+  display: flex;
+  width: 100%;
+  margin: 32px 0;
+}
+
+.column-one {
+  margin: 0 24px;
+  width: 68%;
+  font-size: 1rem;
+}
+
+.column-one img {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.column-one h1 {
+  font-size: 35px;
+  margin-bottom: 24px;
+}
+
+.column-one p {
+  margin-bottom: 24px;
+}
+
+.column-one span {
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.column-two {
+  width: 40%;
+  margin-right: 14px;
+}
+
+.column-two .box img {
+  width: 35%;
+  margin: 16px 16px;
+}
+
+.column-two .box .mobile-pic {
+  display: none;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-right: 1px;
+  box-shadow: 0 0 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin: 0 0 2rem 0;
+}
+
+.info {
+  line-height: 27px;
+  margin-left: 8px;
+  width: 65%;
+}
+
+.info h1 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.info a {
+  color: 	#1E90FF;
+  text-decoration: none;
+}
+
+.info a:hover {
+  color: #F28E06;
+  transition: color 1.5s linear 0;
+}
+
+@media only screen and (max-width:1175px) {
+
+  .section-one .column-one {
+    display: none;
+  }
+
+  .section-one .column-two {
+    width: 100%;
+  }
+
+  .section-one .column-two .box {
+    display: block;
+    box-shadow: none;
+    justify-content: center;
+  }
+
+  .column-two .box .computer {
+    display: none;
+  }
+
+  .column-two .box .mobile-pic {
+    display:flex;
+    width: 100%;
+    margin: 0;
+    margin-left: .44rem;
+    margin-bottom: 1rem;
+  }
+
+  .info h1 {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+}
+
+/*End Main Content Section*/
+
+/*Start Learning Section*/
+
+.learning {
+  background-color: #BEC5DB;
+  font-family: "Nobile";
+  width: 100%
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.learning h1 {
+  font-size: 35px;
+  margin-bottom: 32px;
+  padding-top: 32px;
+  justify-content: center;
+  display: flex;
+}
+
+.courses {
+  padding-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.class {
+  margin: 16px 16px;
+}
+
+.courses a {
+  text-decoration: none;
+  color: black;
+}
+
+.courses a:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  transition: box-shadow 1.5s linear 0;
+}
+
+.class img {
+  height:auto;
+  width: 400px;
+}
+
+.details {
+  background-color: white;
+  padding: 16px;
+  line-height: 25px;
+}
+
+.details h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.details p {
+  font-size: 16px;
+}
+
+.computer p {
+  line-height: 19px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width:1175px) {
+
+.learning h1 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.class img {
+  display: none;
+}
+
+.class p {
+  display: none;
+  }
+
+.courses {
+  display: block;
+}
+
+.courses a .class {
+  width: 100%;
+  margin: .5rem 0rem;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.class h2{
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.courses a .class :hover {
+  background-color: #A3DEC6;
+  transition: background-color 1.5s linear 0;
+}
+
+}
+
+
+/*End of Start Learning Section*/
+
+/*Thesis Exhibit Section*/
+
+.section-three {
+  font-family: "Nobile";
+  margin: 32px 0 32px 24px;
+  width: 100%;
+}
+
+.section-three span {
+  font-size: 35px;
+  justify-content: center;
+  display: flex;
+}
+
+.section-three-content {
+  display: flex;
+}
+
+.section-three .column-one {
+  margin: 32px 0;
+  font-size: 1rem;
+}
+
+.section-three .column-two {
+  padding: 2rem 2rem 2rem 0;
+}
+
+video {
+  width: 95%;
+}
+
+.section-three .box:last-child {
+  background-color: white;
+}
+
+.section-three .info p:last-child {
+  color: black;
+}
+
+.section-three-content h1 {
+  font-size: 25px;
+  margin-top: 24px;
+}
+
+@media only screen and (max-width:1175px) {
+.section-three span{
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-three {
+  width: 100%;
+  margin: 0;
+}
+
+.section-three .column-two {
+  display: none;
+}
+
+.section-three .column-one {
+  width:100%;
+  margin: 0;
+}
+
+video {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.section-three .column-one h1, p {
+  display: none;
+}
+}
+
+
+/*End of Thesis Exhibit Section*/
+
+/*Footer*/
+
+footer{
+  background-color: #BEC5DB;
+  display: flex;
+  height: 8rem;
+}
+
+.foot {
+  width: 100%;
+  display: flex;
+}
+
+.copyright {
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  display:flex;
+  font-family: "Nobile", serif;
+}
+
+.terms {
+  display: inline-block;
+  margin-left: 60%;
+  margin-bottom: 40px;
+  margin-top: 2rem;
+  font-family: "Nobile", serif;
+  margin-right: .5rem;
+}
+
+.terms a {
+  margin-left: 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width:1175px) {
+footer a {
+  display: none;
+}
+
+.foot .copyright {
+  margin: 5rem 0 1rem 2rem;
+}
+
+footer {
+  border: none;
+  width: 100%;
+  background-color: white;
+}
+}
+
+/*End Footer*/
